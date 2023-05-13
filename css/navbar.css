@@ -46,6 +46,7 @@
     color: #fff;
     text-decoration: none;
   }
+  
   .navbar-responsive .navbar-responsive__nav .navbar-responsive__link a:after {
     top: 50%;
     bottom: 0;

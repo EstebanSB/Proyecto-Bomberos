@@ -1,31 +1,27 @@
 //MENU NAVBAR
-$(document).ready(function(){
-    var state = false,
-        links = $('.navbar-responsive__link')
-      $('#nav-icon3').click(function(){
-          $(this).toggleClass('open');
-      if(!state) {
-        $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
-        state = true
-      } else {
-        $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
-        state = false
-      }
-      
-      })
-    $.each(links, function(index,value){
-      value.addEventListener("click",function(){
-        if(!state) {
-          $('.navbar-responsive').css("transform", "translate3d(0,0,0)")
-          state = true
+const navSlide = () => {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
+  
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+  
+      navLinks.forEach((link, index) => {
+        if (link.style.animation) {
+          link.style.animation = "";
         } else {
-          $('.navbar-responsive').css("transform", "translate3d(-100%,0,0)")
-          state = false
+          link.style.animation = `navLinkFade 0.5s ease forwards ${
+            index / 7 + 0.3
+          }s`;
         }
-        $('#nav-icon3').removeClass('open')
-      })
-    })
-  })
+      });
+  
+      burger.classList.toggle("toggle");
+    });
+  };
+  
+  navSlide();  
 
 
 /*** BOTON SCROLL***/
