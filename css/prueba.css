@@ -5,9 +5,10 @@
     font-family: inherit;
     font-style: inherit;
     font-size: 100%;
-    text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none !important;
 }
 
 /* GENERAL STYLES */
@@ -49,11 +50,15 @@ nav ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
+    text-decoration: none !important;
+    outline: none !important;
 }
 
 nav ul li a.active,
 nav ul li a:hover {
-    background-color: #333364 ;
+    background: none;
+    background: linear-gradient(to right, #0d47a1, #a5d6a7);
+    color: #fff;
     transition: .5s;
 }
 
@@ -76,6 +81,9 @@ nav .checkbtn {
     nav ul li a {
         font-size: 16px;
     }
+    #carousel{
+        height: 15em;
+    }
 }
 
 @media (max-width: 858px) {
@@ -85,19 +93,14 @@ nav .checkbtn {
     nav ul {
         position: fixed;
         width: 100%;
-        height: 70vh;
-        
+        height: 65vh;
         left: -100%;
         top: 80px;
         transition: all .5s;
         text-align: center;
-/* From https://css.glass */
-background: rgba(0, 78, 146, 0.59);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(20px);
--webkit-backdrop-filter: blur(20px);
-
+        background: #000428;
+        background: -webkit-linear-gradient(to right, #004e92, #000428);  
+        background: linear-gradient(to right, #004e92, #000428);
     }
     nav ul li {
         
@@ -106,6 +109,7 @@ backdrop-filter: blur(20px);
         line-height: 30px;
     }
     nav ul li a {
+        
         font-size: 20px;
         border-bottom: 2px solid #fff;
     }
@@ -126,7 +130,8 @@ nav .logo img {
     vertical-align: middle;
     margin-left: 50px;
     width: 60px;
-    height: 60px;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -139,12 +144,11 @@ nav .logo img {
 .carousel {
     position: relative;
     width: 100%;
-    height: 41em;
+    height: 35em;
     min-height: 400px;
     bottom: 8px;
     text-align: center;
     overflow: hidden;
-    
 }
 
 .carousel .carousel-inner,
@@ -209,7 +213,9 @@ nav .logo img {
         font-weight: 500;
         letter-spacing: 0;
     }
+
 }
+
 
 @media (max-width: 575.98px) {
     .carousel .carousel-caption .btn {
