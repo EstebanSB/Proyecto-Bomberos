@@ -15,6 +15,8 @@ $(document).ready(function() {
         return false;
     });
 });
+//GALERIA
+
 
 
 

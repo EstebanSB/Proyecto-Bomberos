@@ -138,8 +138,6 @@ nav .logo img {
     height: auto;
 }
 
-
-
 /*AQUI COMIENZA EL CARRUSEL*/
 #carousel{
     position: relative;
@@ -246,6 +244,20 @@ nav .logo img {
     margin: 30px 0;
 }
 
+/*ESTILO DE LOS BOTONES*/
+#button {
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  
+    background: linear-gradient(to right, #004e92, #000428);
+	border-radius:28px;
+	color:#ffffff;
+	font-size: 18px;
+	padding: 20px 30px;
+}
+#button:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
 
 /*FOOTER*/
 :root {
@@ -302,4 +314,8 @@ nav .logo img {
   .social-links a .fa-youtube:hover {
     color: var(--yt-red);
   }
+
+/*INICIO GALERIA*/
+
+/*TERMINO GALERIA*/
 
