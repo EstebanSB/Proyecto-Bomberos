@@ -4,13 +4,14 @@
     font-weight: inherit;
     font-family: inherit;
     font-style: inherit;
-    font-size: 100%;
     list-style: none;
     box-sizing: border-box;
     text-decoration: none !important;
     outline: none !important;
 }
-
+.row {
+    margin: 15px;
+  }
 /* GENERAL STYLES */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +19,7 @@ body {
 
 /* NAVBAR STYLES */
 nav {
-    position: relative;
+    position: absolute;
     z-index: 9999;
     background: #000428;
     background: -webkit-linear-gradient(to right, #004e92, #000428);  

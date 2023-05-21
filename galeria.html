@@ -9,8 +9,6 @@
     <title>Galeria | Bomberos de Chile</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/stylegaleria.css">
-    <!-- Fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://kit.fontawesome.com/0458944bda.js" crossorigin="anonymous"></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -19,10 +17,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,700">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css'>
+</head>
 </head>
 
 <body>
@@ -36,9 +33,8 @@
             <img src="logo/logo.png" alt="Logo" class="">
         </div>
         <ul>
-            <li><a class="active" href="index.html">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a class="active" href="galeria.html">Galeria</a></li>
             <li><a href="historia.html">Historia</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
@@ -89,7 +85,7 @@
             </div>
     
             <div class="col-md-6 d-flex flex-column justify-content-center align-items-center texto1">
-                <h4 class="display-3">Galeria</h4>
+                <h4 class="display-3" >Galeria</h4>
                 <p class="text-justify lead">
                     Aquí podrás ver algunas fotografías de nuestro equipo en acción.
                 </p>
@@ -100,16 +96,59 @@
     <!-- TERMINO TEXTO - IMAGEN -->
 
     <!---------- INICIO DE LA GALERIA -------------------->
-    
-
-    
+    <div class="container">
+        <div class="row">
+          <a href="img/img_carousel_04.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_04.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_05.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_05.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_06.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_06.jpg" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="row">
+          <a href="img/img_carousel_10.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_10.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_08.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_08.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_09.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_09.jpg" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="row">
+          <a href="img/img_carousel_14.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_14.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_13.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_13.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_12.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_12.jpg" class="img-fluid rounded">
+          </a>
+        </div>
+        <div class="row">
+          <a href="img/img_carousel_15.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_15.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_11.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_11.jpg" class="img-fluid rounded">
+          </a>
+          <a href="img/img_carousel_16.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+            <img src="img/img_carousel_16.jpg" class="img-fluid rounded">
+          </a>
+        </div>
+      </div>
     <!---------- TERMINO DE LA GALERIA ------------------->
 
-
+    <br>
 
     <!-- INICIO FOOTER -->
     <footer>
-        <p>&copy; 2023 Bomberos de Chile. | All rights reserved.</p>
+        <p class="texto2">&copy; 2023 Bomberos de Chile. | All rights reserved.</p>
         <div class="social-links">
           <a href="https://www.facebook.com/codebustler" target="_blank"
             ><i class="fab fa-facebook logos"></i
@@ -129,10 +168,12 @@
 
     <!--SCRIPTS PARA EL FUNCIONAMIENTO DE LA PAGINA-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/scriptS1.js "></script>
+    <script src="js/scriptS1.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js'></script>
+
     <script>
         $(document).ready(function() {
             $(".toggle-nav").click(function() {
