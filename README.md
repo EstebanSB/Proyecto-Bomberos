@@ -1,2 +1,2 @@
 # proyecto-bomberos
-Pagina web orientada a bomberos de chile. AUN EN DESARROLLO
+Pagina web orientada a bomberos de chile.
